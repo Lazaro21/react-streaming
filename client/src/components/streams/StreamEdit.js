@@ -9,7 +9,7 @@ const StreamEdit = (props) => {
 
 	useEffect(() => {
 		props.fetchStream(streamId);
-	}, []);
+	},);
 
 	const onSubmit = (formValues) => {
 		props.editStream(streamId, formValues);
